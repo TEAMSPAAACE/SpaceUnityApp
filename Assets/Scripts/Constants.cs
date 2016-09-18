@@ -1,7 +1,7 @@
 ﻿public abstract class Tags
 {
-    public const string SUN         = "Sun";
     public const string STEAMVR     = "SteamVR";
+    public const string SUN         = "Sun";
 
     // Buttons
     public const string BUTTON_POSITRONIC_BRAIN_CORE    = "Button - POSITRONIC BRAIN CORE";

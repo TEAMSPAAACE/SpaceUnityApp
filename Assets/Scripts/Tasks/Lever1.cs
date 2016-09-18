@@ -29,7 +29,7 @@ public class Lever1 : BaseTask
 
     private void HandleValueChange(float value, float normalizedValue)
     {
-        if (value == chosenValue)
+        if (normalizedValue == chosenValue)
         {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
             taskTextUpdater.SetTickerText(taskCompleteText);
