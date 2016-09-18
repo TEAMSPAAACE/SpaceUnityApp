@@ -6,10 +6,10 @@ public class TaskManager : MonoBehaviour
     private bool isTaskActive = false;
     private Transform currentTask;
     private Transform lastTask;
-    private 
+
+
     void OnEnable()
     {
-	    
 	}
 	
 	void Update()
@@ -29,7 +29,6 @@ public class TaskManager : MonoBehaviour
                 } while (lastTask == currentTask);
             }
             currentTask.gameObject.SetActive(true);
-
             currentTask.GetComponent<BaseTask>().TaskComplete += new TaskCompleteEventHandler(DoCompleteTask);
             isTaskActive = true;
             Debug.Log("Activated " + currentTask.name);
