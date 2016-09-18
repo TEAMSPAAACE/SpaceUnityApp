@@ -4,8 +4,7 @@
     public const string LEVER_HYPER_DRIVE   = "Lever - Hyper Drive";
     public const string BUTTON_TASK_1       = "Button - Task 1";
     public const string SLIDER_TASK_2       = "Slider - Task 2";
-    public const string LEFT_CONTROLLER     = "Left Controller";
-    public const string RIGHT_CONTROLLER    = "Right Controller";
+    public const string TASK_SCREEN_TEXT    = "Task Screen Text";
 }
 
 /*
