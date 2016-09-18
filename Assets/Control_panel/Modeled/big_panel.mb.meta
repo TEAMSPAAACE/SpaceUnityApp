@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: 0e183dc20961a4452a1025e5b5e64f82
-timeCreated: 1474183801
+guid: 116f768b89343c442a4c188e6740c19c
+timeCreated: 1474182668
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: square_switch_base
-    100004: square_switch_switch
     400000: //RootNode
-    400002: square_switch_base
-    400004: square_switch_switch
-    2300000: square_switch_base
-    2300002: square_switch_switch
-    3300000: square_switch_base
-    3300002: square_switch_switch
-    4300000: square_switch_base
-    4300002: square_switch_switch
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCube1
     9500000: //RootNode
   materials:
     importMaterials: 0
