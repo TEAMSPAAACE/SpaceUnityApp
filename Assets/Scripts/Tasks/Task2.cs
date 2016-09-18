@@ -28,7 +28,9 @@ public class Task2 : BaseTask
 
         Debug.Log("slider win condition is " + chosenValue);
 
+        taskTextUpdater = GameObject.FindGameObjectWithTag(Tags.TASK_TICKER_TEXT).GetComponent<TaskTextUpdater>();
         taskTextToDisplay = "Move the slider to " + chosenValue;
+        taskTextUpdater.SetTickerText(taskTextToDisplay);
 
         sliderScript.defaultEvents.OnValueChanged.AddListener(HandleValueChange);
     }
@@ -43,6 +45,7 @@ public class Task2 : BaseTask
         if (value == chosenValue)
         {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
+            taskTextUpdater.SetTickerText(taskCompleteText);
         }
     }
 

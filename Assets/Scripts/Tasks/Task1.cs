@@ -6,7 +6,10 @@ public class Task1 : BaseTask
 {
     void OnEnable()
     {
+        taskTextUpdater = GameObject.FindGameObjectWithTag(Tags.TASK_TICKER_TEXT).GetComponent<TaskTextUpdater>();
         taskTextToDisplay = "Press the button";
+        taskTextUpdater.SetTickerText(taskTextToDisplay);
+
         //TODO play sound
         //TODO play animation
         //TODO track time for task failure reasons
@@ -16,6 +19,7 @@ public class Task1 : BaseTask
     private void HandleButtonPress()
     {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
+            taskTextUpdater.SetTickerText(taskCompleteText);
     }
 
     /*

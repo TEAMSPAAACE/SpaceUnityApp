@@ -30,19 +30,18 @@ public class BaseTask : MonoBehaviour
     }
 
     protected string taskTextToDisplay;
+    protected TaskTextUpdater taskTextUpdater;
+    protected string taskCompleteText = "Task Complete!";
 
-    private TaskTextUpdater taskTextUpdater;
-    private string taskCompleteText = "Task Complete!";
-
-    void OnEnable()
+    /*
+    public virtual void OnEnable()
     {
         //TODO not sure if base class needs the following TODOs
         //TODO play sound
         //TODO play animation
         //TODO track time for task failure reasons
-        taskTextUpdater = GameObject.FindGameObjectWithTag(Tags.TASK_SCREEN_TEXT).GetComponent<TaskTextUpdater>();
-        taskTextUpdater.SetTickerText(taskTextToDisplay);
     }
+    */
 
     void Update()
     {
@@ -51,7 +50,6 @@ public class BaseTask : MonoBehaviour
 
     void OnDisable()
     {
-        taskTextUpdater.SetTickerText(taskCompleteText);
     }
 
 }

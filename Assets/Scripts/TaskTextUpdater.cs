@@ -9,21 +9,11 @@ public class TaskTextUpdater : MonoBehaviour {
 
     void Start()
     {
-        text = GetComponent<Text>();
-        StartCoroutine(TextUpdateDelay());
-    }
-
-    IEnumerator TextUpdateDelay()
-    {
-        while (true)
-        {
-            text.text = taskText;
-            yield return new WaitForSeconds(.1f);
-        }
+        text = GetComponentInChildren<Text>();
     }
 
     public void SetTickerText(string newTaskText)
     {
-        taskText = newTaskText;
+        text.text = newTaskText;
     }
 }

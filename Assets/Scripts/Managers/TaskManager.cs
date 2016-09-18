@@ -15,7 +15,7 @@ public class TaskManager : MonoBehaviour
 	void Update()
     {
         //TODO coroutine to delay between tasks
-	    if (!isTaskActive && GameManager.Instance.hyperDriveGauge < 100)
+        if (!isTaskActive && GameManager.Instance.hyperDriveGauge < 100)
         {
             lastTask = currentTask;
             currentTask = this.transform.GetChild(Random.Range(0, this.transform.childCount));
@@ -34,6 +34,22 @@ public class TaskManager : MonoBehaviour
             Debug.Log("Activated " + currentTask.name);
         }
     }
+
+    /*
+    IEnumerator TaskManagementWithDelay()
+    {
+        while (true)
+        {
+        
+            yield return new WaitForSeconds(.1f);
+        }
+
+
+        yield return new WaitForSeconds(.1f);
+
+
+    }
+    */
 
     private void DoCompleteTask(TaskCompleteEventArgs e)
     {
