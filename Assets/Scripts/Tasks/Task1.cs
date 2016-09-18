@@ -9,7 +9,7 @@ public class Task1 : BaseTask
         //TODO play sound
         //TODO play animation
         //TODO track time for task failure reasons
-        GameObject.FindGameObjectWithTag(Tags.BUTTON_TASK_1).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HandleValueChange);
+        GameObject.FindGameObjectWithTag(Tags.BUTTON_TASK_1).GetComponentInChildren<VRTK_Button>().events.OnPush.AddListener(HandleButtonPress);
     }
     
     void Update()
@@ -17,16 +17,15 @@ public class Task1 : BaseTask
 
     }
 
-    private void HandleValueChange(float value, float normalizedValue)
+    private void HandleButtonPress()
     {
-        if (normalizedValue >= 80)
-        {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
-        }
     }
 
+    /*
     void OnDisable()
     {
         GameObject.FindGameObjectWithTag(Tags.BUTTON_TASK_1).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.RemoveAllListeners();
     }
+    */
 }
