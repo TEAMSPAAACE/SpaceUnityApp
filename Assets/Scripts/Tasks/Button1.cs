@@ -17,6 +17,6 @@ public class Button1 : BaseTask
     private void HandleButtonPress()
     {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
-            taskTextUpdater.SetTickerText(taskCompleteText);
+            //taskTextUpdater.SetTickerText(taskCompleteText);
     }
 }

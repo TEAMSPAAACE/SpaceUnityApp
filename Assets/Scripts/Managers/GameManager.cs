@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator HyperDriveDelay()
     {
-        taskTextUpdater.SetTickerText("You manage to escape!");
+        taskTextUpdater.SetTickerText("You managed to escape!");
 
         yield return new WaitForSeconds(10f);
 

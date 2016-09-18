@@ -9,7 +9,7 @@ public class ButtonAudio : MonoBehaviour
 	void OnEnable()
 	{
 		buttonAudio = GetComponent<AudioSource>();
-		GetComponent<VRTK_Button>().events.OnPush.AddListener(ButtonPressSound);
+		GetComponentInChildren<VRTK_Button>().events.OnPush.AddListener(ButtonPressSound);
 	}
 
 	private void ButtonPressSound()
