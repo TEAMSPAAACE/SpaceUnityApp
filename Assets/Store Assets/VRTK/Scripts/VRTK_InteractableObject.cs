@@ -889,5 +889,10 @@ namespace VRTK
                 forcedDropped = true;
             }
         }
+
+        protected virtual void OnDestroy()
+        {
+            StopAllCoroutines();
+        }
     }
 }
