@@ -1,52 +1,16 @@
 fileFormatVersion: 2
-guid: b8671c0f72d9b4e799e896b77dc48601
-timeCreated: 1474158653
+guid: 23cffecbb4e4b2e4bbd298767748553d
+timeCreated: 1474168300
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: ship_dashboard
-    100004: ship_hull
-    100006: ship_window
-    100008: pCube8
-    100010: pCylinder3
-    100012: pCylinder4
-    100014: pCylinder5
-    100016: ship_dashboard1
     400000: //RootNode
-    400002: ship_dashboard
-    400004: ship_hull
-    400006: ship_window
-    400008: pCube8
-    400010: pCylinder3
-    400012: pCylinder4
-    400014: pCylinder5
-    400016: ship_dashboard1
-    2300000: ship_dashboard
-    2300002: ship_hull
-    2300004: ship_window
-    2300006: pCube8
-    2300008: pCylinder3
-    2300010: pCylinder4
-    2300012: pCylinder5
-    2300014: ship_dashboard1
-    3300000: ship_dashboard
-    3300002: ship_hull
-    3300004: ship_window
-    3300006: pCube8
-    3300008: pCylinder3
-    3300010: pCylinder4
-    3300012: pCylinder5
-    3300014: ship_dashboard1
-    4300000: ship_dashboard
-    4300002: ship_hull
-    4300004: ship_window
-    4300006: pCylinder3
-    4300008: pCylinder4
-    4300010: ship_dashboard1
-    4300012: pCube8
-    4300014: pCylinder5
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCylinder1
+    9500000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -105,7 +69,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
