@@ -1,10 +1,12 @@
 ﻿public abstract class Tags
 {
-    public const string STEAMVR             = "SteamVR";
-    public const string LEVER_HYPER_DRIVE   = "Lever - Hyper Drive";
-    public const string BUTTON_TASK_1       = "Button - Task 1";
-    public const string SLIDER_TASK_2       = "Slider - Task 2";
-    public const string TASK_TICKER_TEXT    = "Task Ticker Text";
+    public const string STEAMVR                 = "SteamVR";
+    public const string LEVER_HYPER_DRIVE       = "Lever - Hyper Drive";
+    public const string BUTTON_TASK_1           = "Button - Task 1";
+    public const string SLIDER_TASK_2           = "Slider - Task 2";
+    public const string TASK_TICKER_TEXT        = "Task Ticker Text";
+    public const string COUNTDOWN_TIMER_TEXT    = "Countdown Timer Text";
+    public const string WARP_GAUGE_TEXT         = "Warp Gauge Text";
 }
 
 /*
