@@ -15,7 +15,7 @@ public class TaskManager : MonoBehaviour
 	void Update()
     {
         //TODO coroutine to delay between tasks
-        if (!isTaskActive && GameManager.Instance.hyperDriveGauge < 100)
+        if (!isTaskActive && GameManager.Instance.warpDriveGaugeAmount < 100)
         {
             lastTask = currentTask;
             currentTask = this.transform.GetChild(Random.Range(0, this.transform.childCount));
@@ -55,7 +55,7 @@ public class TaskManager : MonoBehaviour
     {
         currentTask.GetComponent<BaseTask>().TaskComplete -= new TaskCompleteEventHandler(DoCompleteTask);
         currentTask.gameObject.SetActive(false);
-        GameManager.Instance.UpdateHyperDriveGauge(e.taskStatus, e.taskTag);
+        GameManager.Instance.UpdateWarpDriveGauge(e.taskStatus, e.taskTag);
         isTaskActive = false;
         Debug.Log("Deactivated " + currentTask.name);
     }

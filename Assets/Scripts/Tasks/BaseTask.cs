@@ -29,8 +29,12 @@ public class BaseTask : MonoBehaviour
         return e;
     }
 
-    protected string taskTextToDisplay;
     protected TaskTextUpdater taskTextUpdater;
+
+    [SerializeField]
+    protected string taskTextToDisplay;
+
+    [SerializeField]
     protected string taskCompleteText = "Task Complete!";
 
     /*
