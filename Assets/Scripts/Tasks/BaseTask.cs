@@ -30,11 +30,7 @@ public class BaseTask : MonoBehaviour
     }
 
     protected TaskTextUpdater taskTextUpdater;
-
-    [SerializeField]
     protected string taskTextToDisplay;
-
-    [SerializeField]
     protected string taskCompleteText = "Task Complete!";
 
     /*
