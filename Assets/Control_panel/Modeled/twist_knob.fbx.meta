@@ -1,41 +1,8 @@
 fileFormatVersion: 2
 guid: fe27c367d6a0541cfbed4a49e538eb2a
-<<<<<<< HEAD
-timeCreated: 1474169609
-=======
-timeCreated: 1474168312
->>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-<<<<<<< HEAD
-    100000: pCylinder1
-    100002: pCylinder2
-    100004: //RootNode
-    100006: twist_knob_center
-    100008: twist_knob_star
-    400000: pCylinder1
-    400002: pCylinder2
-    400004: //RootNode
-    400006: twist_knob_center
-    400008: twist_knob_star
-    2300000: pCylinder1
-    2300002: pCylinder2
-    2300004: twist_knob_center
-    2300006: twist_knob_star
-    3300000: pCylinder1
-    3300002: pCylinder2
-    3300004: twist_knob_center
-    3300006: twist_knob_star
-    4300000: pCylinder1
-    4300002: pCylinder2
-    4300004: twist_knob_star
-    4300006: twist_knob_center
-    9500000: //RootNode
-  materials:
-    importMaterials: 1
-=======
     100000: //RootNode
     100002: twist_knob_center
     100004: twist_knob_star
@@ -50,8 +17,7 @@ ModelImporter:
     4300002: twist_knob_center
     9500000: //RootNode
   materials:
-    importMaterials: 0
->>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -74,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

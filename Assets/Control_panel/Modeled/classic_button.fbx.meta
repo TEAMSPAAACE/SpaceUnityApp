@@ -1,41 +1,9 @@
 fileFormatVersion: 2
 guid: 8158be53f44974ad89788488881efb6d
-<<<<<<< HEAD
-timeCreated: 1474169609
-=======
-timeCreated: 1474168310
->>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-<<<<<<< HEAD
-    100002: pCylinder1
-    100004: pCylinder2
-    100006: classic_button_base
-    100008: classic_button_button
-    400000: //RootNode
-    400002: pCylinder1
-    400004: pCylinder2
-    400006: classic_button_base
-    400008: classic_button_button
-    2300000: pCylinder1
-    2300002: pCylinder2
-    2300004: classic_button_base
-    2300006: classic_button_button
-    3300000: pCylinder1
-    3300002: pCylinder2
-    3300004: classic_button_base
-    3300006: classic_button_button
-    4300000: pCylinder1
-    4300002: pCylinder2
-    4300004: classic_button_base
-    4300006: classic_button_button
-    9500000: //RootNode
-  materials:
-    importMaterials: 1
-=======
     100002: classic_button_base
     100004: classic_button_button
     400000: //RootNode
@@ -49,8 +17,7 @@ ModelImporter:
     4300002: classic_button_button
     9500000: //RootNode
   materials:
-    importMaterials: 0
->>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -73,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

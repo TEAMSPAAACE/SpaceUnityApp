@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: c12782ad37a534f67aaf3cd16e4b9841
-timeCreated: 1474169609
-=======
-guid: 0e92091e061d7dc4cb4de8874057d016
-timeCreated: 1474168300
->>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -17,12 +10,9 @@ ModelImporter:
     2300000: controlPanel_topNearRight
     3300000: controlPanel_topNearRight
     4300000: controlPanel_topNearRight
+    9500000: //RootNode
   materials:
-<<<<<<< HEAD
     importMaterials: 1
-=======
-    importMaterials: 0
->>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:
@@ -45,7 +35,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -79,7 +69,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
