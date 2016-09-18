@@ -26,7 +26,9 @@ public class Task2 : BaseTask
             } while (chosenValue == sliderScript.GetValue());
         }
 
-        Debug.Log("Please move slider to " + chosenValue);
+        Debug.Log("slider win condition is " + chosenValue);
+
+        taskTextToDisplay = "Move the slider to " + chosenValue;
 
         sliderScript.defaultEvents.OnValueChanged.AddListener(HandleValueChange);
     }

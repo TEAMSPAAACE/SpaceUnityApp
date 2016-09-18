@@ -7,9 +7,9 @@ public class TaskManager : MonoBehaviour
     private Transform currentTask;
     private Transform lastTask;
 
+
     void OnEnable()
     {
-	
 	}
 	
 	void Update()
