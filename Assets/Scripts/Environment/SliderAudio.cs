@@ -9,7 +9,7 @@ public class SliderAudio : MonoBehaviour
 	void OnEnable()
 	{
 		sliderAudio = GetComponent<AudioSource>();
-		GameObject.FindGameObjectWithTag(Tags.SLIDER_TASK_2).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(SliderSound);
+		GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(SliderSound);
 	}
 
 	private void SliderSound(float a, float b)

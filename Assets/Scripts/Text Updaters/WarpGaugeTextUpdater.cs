@@ -12,9 +12,9 @@ public class WarpGaugeTextUpdater : MonoBehaviour {
         text = GetComponentInChildren<Text>();
     }
 
-    public void SetWarpGaugeText(int currentValue)
+    public void SetWarpGaugeText(int currentWarpGaugeValue)
     {
-        text.text = "Warp Recharge at " + currentValue.ToString() + "%";
+        text.text = "Warp Recharge at " + currentWarpGaugeValue.ToString() + "%";
     }
 }
 

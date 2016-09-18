@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
         }
         */
 
-        GameObject.FindGameObjectWithTag(Tags.LEVER_HYPER_DRIVE).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HyperDriveLeverListener);
+        GameObject.FindGameObjectWithTag(Tags.LEVER_WARP_DRIVE).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HyperDriveLeverListener);
     }
 
     

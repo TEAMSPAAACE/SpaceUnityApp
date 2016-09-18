@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 	
 	void Update ()
     {
+
+
         if (countdownTimer > 0f)
             countdownTimer -= Time.deltaTime;
         
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour
 
         if (warpDriveGaugeAmount >= 100)
         {
-            GameObject.FindGameObjectWithTag(Tags.LEVER_HYPER_DRIVE).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HyperDriveLeverListener);
+            GameObject.FindGameObjectWithTag(Tags.LEVER_WARP_DRIVE).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HyperDriveLeverListener);
             taskTextUpdater.SetTickerText(warpReadyText);
         }
     }
@@ -78,8 +80,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator HyperDriveDelay()
     {
-        yield return new WaitForSeconds(1f);
-        Debug.Log("YOU WIN OMG GOOD JOB!!!1one");
+        taskTextUpdater.SetTickerText("You manage to escape!");
+
+        yield return new WaitForSeconds(10f);
+
         SceneManager.LoadScene(Scenes.MAIN_MENU);
     }
 
