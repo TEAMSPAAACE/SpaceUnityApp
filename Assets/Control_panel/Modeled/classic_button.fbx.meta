@@ -1,11 +1,16 @@
 fileFormatVersion: 2
 guid: 8158be53f44974ad89788488881efb6d
+<<<<<<< HEAD
 timeCreated: 1474169609
+=======
+timeCreated: 1474168310
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+<<<<<<< HEAD
     100002: pCylinder1
     100004: pCylinder2
     100006: classic_button_base
@@ -30,6 +35,22 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
+=======
+    100002: classic_button_base
+    100004: classic_button_button
+    400000: //RootNode
+    400002: classic_button_base
+    400004: classic_button_button
+    2300000: classic_button_base
+    2300002: classic_button_button
+    3300000: classic_button_base
+    3300002: classic_button_button
+    4300000: classic_button_base
+    4300002: classic_button_button
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

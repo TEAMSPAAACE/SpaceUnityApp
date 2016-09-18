@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: 80b33ec2f601e43ffbe480769d8e21de
+<<<<<<< HEAD
 timeCreated: 1474169609
+=======
+timeCreated: 1474168310
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+<<<<<<< HEAD
     100000: pCube1
     100002: pCylinder1
     100004: pCylinder2
@@ -54,6 +59,23 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
+=======
+    100000: //RootNode
+    100002: semicircle_lever_base
+    100004: semicircle_lever_handle
+    400000: //RootNode
+    400002: semicircle_lever_base
+    400004: semicircle_lever_handle
+    2300000: semicircle_lever_base
+    2300002: semicircle_lever_handle
+    3300000: semicircle_lever_base
+    3300002: semicircle_lever_handle
+    4300000: semicircle_lever_handle
+    4300002: semicircle_lever_base
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

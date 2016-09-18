@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e7750ee3b3a9f4704941b31521d18715
 timeCreated: 1474169609
+=======
+guid: 23cffecbb4e4b2e4bbd298767748553d
+timeCreated: 1474168300
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -12,7 +17,11 @@ ModelImporter:
     4300000: pCylinder1
     9500000: //RootNode
   materials:
+<<<<<<< HEAD
     importMaterials: 1
+=======
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: fe27c367d6a0541cfbed4a49e538eb2a
+<<<<<<< HEAD
 timeCreated: 1474169609
+=======
+timeCreated: 1474168312
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+<<<<<<< HEAD
     100000: pCylinder1
     100002: pCylinder2
     100004: //RootNode
@@ -30,6 +35,23 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
+=======
+    100000: //RootNode
+    100002: twist_knob_center
+    100004: twist_knob_star
+    400000: //RootNode
+    400002: twist_knob_center
+    400004: twist_knob_star
+    2300000: twist_knob_center
+    2300002: twist_knob_star
+    3300000: twist_knob_center
+    3300002: twist_knob_star
+    4300000: twist_knob_star
+    4300002: twist_knob_center
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

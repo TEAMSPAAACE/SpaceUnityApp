@@ -1,11 +1,16 @@
 fileFormatVersion: 2
 guid: c49bfdaa60a4c4bed8aaba5121a78d5a
+<<<<<<< HEAD
 timeCreated: 1474169609
+=======
+timeCreated: 1474168311
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+<<<<<<< HEAD
     100002: pCube1
     100004: pCylinder1
     100006: pCylinder2
@@ -40,6 +45,26 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
+=======
+    100002: circleSwitch_base
+    100004: circleSwitch_stick
+    100006: circleSwitch_stickBase
+    400000: //RootNode
+    400002: circleSwitch_base
+    400004: circleSwitch_stick
+    400006: circleSwitch_stickBase
+    2300000: circleSwitch_base
+    2300002: circleSwitch_stick
+    2300004: circleSwitch_stickBase
+    3300000: circleSwitch_base
+    3300002: circleSwitch_stick
+    3300004: circleSwitch_stickBase
+    4300000: circleSwitch_base
+    4300002: circleSwitch_stick
+    4300004: circleSwitch_stickBase
+  materials:
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:
@@ -96,7 +121,11 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
   animationType: 2
+=======
+  animationType: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

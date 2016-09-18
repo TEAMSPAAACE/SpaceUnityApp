@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: 0e183dc20961a4452a1025e5b5e64f82
+<<<<<<< HEAD
 timeCreated: 1474169607
+=======
+timeCreated: 1474168300
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+<<<<<<< HEAD
     100000: pCube1
     100002: pCube3
     100004: //RootNode
@@ -30,6 +35,23 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
+=======
+    100000: //RootNode
+    100002: square_switch_base
+    100004: square_switch_switch
+    400000: //RootNode
+    400002: square_switch_base
+    400004: square_switch_switch
+    2300000: square_switch_base
+    2300002: square_switch_switch
+    3300000: square_switch_base
+    3300002: square_switch_switch
+    4300000: square_switch_base
+    4300002: square_switch_switch
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

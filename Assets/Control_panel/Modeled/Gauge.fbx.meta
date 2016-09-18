@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4d1d09d67d64645dcb7794e62683c816
 timeCreated: 1474169608
+=======
+guid: 67f53bdb9bcdf74479326e2f71ebfd9a
+timeCreated: 1474168309
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -19,7 +24,11 @@ ModelImporter:
     4300002: gauge_arrow
     9500000: //RootNode
   materials:
+<<<<<<< HEAD
     importMaterials: 1
+=======
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

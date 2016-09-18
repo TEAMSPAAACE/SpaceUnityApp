@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ec80aa9fdd3f645c6b4d9f13fdb89c7c
 timeCreated: 1474169609
+=======
+guid: b6353fcb24fc0e64e856d2c4f11b89a4
+timeCreated: 1474168311
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -13,7 +18,11 @@ ModelImporter:
     3300000: controlPanel_topFarLeft
     4300000: controlPanel_topFarLeft
   materials:
+<<<<<<< HEAD
     importMaterials: 1
+=======
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

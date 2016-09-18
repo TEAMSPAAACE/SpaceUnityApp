@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 54d535c85d0534fb9be3fde2642b1422
 timeCreated: 1474169609
+=======
+guid: 7ecbeb9e1003ee84a884962689533382
+timeCreated: 1474168310
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -11,7 +16,11 @@ ModelImporter:
     3300000: //RootNode
     4300000: window
   materials:
+<<<<<<< HEAD
     importMaterials: 1
+=======
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:

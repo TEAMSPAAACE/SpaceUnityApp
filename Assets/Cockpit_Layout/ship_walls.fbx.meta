@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 275054985fe7144839419f683368dca1
 timeCreated: 1474169608
+=======
+guid: 18229fb7b9308d6459f2ed3b5bf9f7c2
+timeCreated: 1474168300
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -11,7 +16,11 @@ ModelImporter:
     3300000: //RootNode
     4300000: ship_walls
   materials:
+<<<<<<< HEAD
     importMaterials: 1
+=======
+    importMaterials: 0
+>>>>>>> a24bb993e7b7cb87ecbee8accebf3711708dc5cc
     materialName: 0
     materialSearch: 1
   animations:
