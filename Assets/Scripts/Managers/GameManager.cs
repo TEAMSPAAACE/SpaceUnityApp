@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public float countdownTimer;
 
     [SerializeField]
-    private float gameSessionLength = 120f; // 2 minute game session
+    private float gameSessionLength = 90f; // 1.5 minute game session
     [SerializeField]
     private string warpReadyText = "Warp Ready!";
 
@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     private WarpGaugeTextUpdater warpGaugeTextUpdater;
     private bool justLost;
 
+    private Vector3 foo;
+    private Transform sun;
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -27,6 +29,9 @@ public class GameManager : MonoBehaviour
 
     void OnEnable()
     {
+        foo = new Vector3(.2f, .2f, .2f);
+        sun = GameObject.FindGameObjectWithTag(Tags.SUN).transform;
+
         countdownTimer = gameSessionLength;
         taskTextUpdater = GameObject.FindGameObjectWithTag(Tags.TASK_TICKER_TEXT).GetComponent<TaskTextUpdater>();
         warpGaugeTextUpdater = GameObject.FindGameObjectWithTag(Tags.WARP_GAUGE_TEXT).GetComponent<WarpGaugeTextUpdater>();
@@ -34,10 +39,16 @@ public class GameManager : MonoBehaviour
 	
 	void Update ()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(Scenes.MAIN_MENU);
+        }
 
         if (countdownTimer > 0f)
+        {
+            sun.localScale += foo * Time.deltaTime;
             countdownTimer -= Time.deltaTime;
+        }
         
         if (countdownTimer <= 0f && !justLost)
         {

@@ -1,15 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VRTK;
 
-public class LeverAudio : MonoBehaviour {
+public class LeverAudio : MonoBehaviour
+{
+    private AudioSource leverAudio;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    void OnEnable()
+    {
+        leverAudio = GetComponent<AudioSource>();
+        GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(LeverPressSound);
+    }
+
+    private void LeverPressSound(float a, float b)
+    {
+        if (leverAudio.isPlaying)
+        {
+            leverAudio.Stop();
+        }
+
+        leverAudio.Play();
+    }
+
 }

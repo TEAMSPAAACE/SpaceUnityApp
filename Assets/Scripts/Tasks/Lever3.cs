@@ -32,7 +32,7 @@ public class Lever3 : BaseTask
         if (normalizedValue == chosenValue)
         {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
-            taskTextUpdater.SetTickerText(taskCompleteText);
+            //taskTextUpdater.SetTickerText(taskCompleteText);
         }
     }
 

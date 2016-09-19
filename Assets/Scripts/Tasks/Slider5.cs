@@ -58,7 +58,7 @@ public class Slider5 : BaseTask
         if (value == chosenValue)
         {
             OnTaskComplete(SetTaskCompleteEventArgs(true));
-            taskTextUpdater.SetTickerText(taskCompleteText);
+            //taskTextUpdater.SetTickerText(taskCompleteText);
         }
     }
 }

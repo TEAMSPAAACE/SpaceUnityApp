@@ -8,17 +8,6 @@ public class MenuManager : MonoBehaviour
 
     void Start()
     {
-        /*
-        var steamVRRigInstance = GameObject.FindGameObjectsWithTag(Tags.STEAMVR);
-
-        
-        if (steamVRRigInstance.Length == 0)
-        {
-            DontDestroyOnLoad((GameObject)Instantiate(steamVRRig, Vector3.zero, Quaternion.identity));
-            DontDestroyOnLoad((GameObject)Instantiate(steamVRHelper, Vector3.zero, Quaternion.identity));
-        }
-        */
-
         GameObject.FindGameObjectWithTag(Tags.LEVER_WARP_DRIVE).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HyperDriveLeverListener);
     }
 
@@ -42,7 +31,11 @@ public class MenuManager : MonoBehaviour
 
     IEnumerator HyperDriveDelay()
     {
-        yield return new WaitForSeconds(1f);
+        GameObject.FindGameObjectWithTag(Tags.PARTICLES).GetComponent<ParticleSystem>().Play();
+
+        GetComponent<AudioSource>().Play();
+
+        yield return new WaitForSeconds(10f);
         SceneManager.LoadScene(Scenes.GAME_SCENE);
     }
 

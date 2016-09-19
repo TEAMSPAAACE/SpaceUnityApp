@@ -2,6 +2,7 @@
 {
     public const string STEAMVR     = "SteamVR";
     public const string SUN         = "Sun";
+    public const string PARTICLES   = "Particles";
 
     // Buttons
     public const string BUTTON_POSITRONIC_BRAIN_CORE    = "Button - POSITRONIC BRAIN CORE";
