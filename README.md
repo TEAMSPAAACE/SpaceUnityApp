@@ -12,7 +12,7 @@ The current MVP was created in 48 hours during the Seattle VR Hackathon IV, whic
 
 * Ivan Kotchouro - Dev/Engineer
 * Kieran Lampert - Design
-* Cat Most - Design [Github](www.github.com/CatMost) www.catherinemost.com
+* [Cat Most] (www.catherinemost.com) - Design [Github](www.github.com/CatMost) 
 * Kevin Vits-Wong - Sound Design
 * Jacob Rapp - Dev/Engineer [Twitter](www.twitter.com/JakeRapp20x6), [Github](www.github.com/J-Rapp)
 * Shuai Y - Project Manager
