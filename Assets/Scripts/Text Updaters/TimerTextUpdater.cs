@@ -17,7 +17,8 @@ public class TimerTextUpdater : MonoBehaviour {
         while (true)
         {
             yield return new WaitForSeconds(1f);
-            text.text = GameManager.Instance.countdownTimer.ToString();
+            
+            text.text = Mathf.FloorToInt(GameManager.Instance.countdownTimer).ToString();
         }
     }
 }

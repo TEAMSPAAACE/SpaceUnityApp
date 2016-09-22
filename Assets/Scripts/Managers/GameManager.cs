@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
 
     void OnEnable()
     {
-        foo = new Vector3(.2f, .2f, .2f);
         sun = GameObject.FindGameObjectWithTag(Tags.SUN).transform;
 
         countdownTimer = gameSessionLength;
@@ -46,7 +45,7 @@ public class GameManager : MonoBehaviour
 
         if (countdownTimer > 0f)
         {
-            sun.localScale += foo * Time.deltaTime;
+            sun.position += sun.forward * 0.1f * Time.deltaTime;
             countdownTimer -= Time.deltaTime;
         }
         
