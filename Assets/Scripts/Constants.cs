@@ -31,6 +31,9 @@
     public const string TASK_TICKER_TEXT        = "Task Ticker Text";
     public const string COUNTDOWN_TIMER_TEXT    = "Countdown Timer Text";
     public const string WARP_GAUGE_TEXT         = "Warp Gauge Text";
+
+    // Audio
+    public const string WARP_AUDIO_MANAGER = "Warp Audio Manager";
 }
 
 public abstract class Scenes

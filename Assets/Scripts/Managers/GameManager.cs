@@ -6,17 +6,17 @@ using VRTK;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
     public int warpDriveGaugeAmount;
     public float countdownTimer;
+    public float gameSessionLength = 120f; // 2 minute game session
 
-    [SerializeField]
-    private float gameSessionLength = 90f; // 1.5 minute game session
     [SerializeField]
     private string warpReadyText = "Warp Ready!";
 
     private TaskTextUpdater taskTextUpdater;
     private WarpGaugeTextUpdater warpGaugeTextUpdater;
-    private bool justLost;
+    private bool gameOver;
 
     private Vector3 foo;
     private Transform sun;
@@ -43,16 +43,16 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(Scenes.MAIN_MENU);
         }
 
-        if (countdownTimer > 0f)
+        if (countdownTimer > 0f && !gameOver)
         {
             sun.position += sun.forward * 0.1f * Time.deltaTime;
             countdownTimer -= Time.deltaTime;
         }
         
-        if (countdownTimer <= 0f && !justLost)
+        if (countdownTimer <= 0f && !gameOver)
         {
             taskTextUpdater.SetTickerText("You lose.");
-            justLost = true;
+            gameOver = true;
             //SceneManager.LoadScene(Scenes.MAIN_MENU);
             //return;
         }
@@ -70,11 +70,14 @@ public class GameManager : MonoBehaviour
                 warpDriveGaugeAmount -= 5;
         }
 
-        Debug.Log("warpDrive " + warpDriveGaugeAmount);
         warpGaugeTextUpdater.SetWarpGaugeText(warpDriveGaugeAmount);
+
+        if (warpDriveGaugeAmount == 50)
+            GameObject.FindGameObjectWithTag(Tags.WARP_GAUGE_TEXT).GetComponent<WarpAudioManager>().playHalfChargeAudio();
 
         if (warpDriveGaugeAmount >= 100)
         {
+            GameObject.FindGameObjectWithTag(Tags.WARP_GAUGE_TEXT).GetComponent<WarpAudioManager>().playFullChargeAudio();
             GameObject.FindGameObjectWithTag(Tags.LEVER_WARP_DRIVE).GetComponentInChildren<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HyperDriveLeverListener);
             taskTextUpdater.SetTickerText(warpReadyText);
         }
@@ -90,11 +93,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator HyperDriveDelay()
     {
+        gameOver = true;
         taskTextUpdater.SetTickerText("You managed to escape!");
 
         yield return new WaitForSeconds(10f);
 
-        SceneManager.LoadScene(Scenes.MAIN_MENU);
+        //SceneManager.LoadScene(Scenes.MAIN_MENU);
     }
 
     /*

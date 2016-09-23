@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour
 
         GetComponent<AudioSource>().Play();
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5.5f);
         SceneManager.LoadScene(Scenes.GAME_SCENE);
     }
 

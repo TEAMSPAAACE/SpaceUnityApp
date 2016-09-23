@@ -14,7 +14,11 @@ public class SliderAudio : MonoBehaviour
 
 	private void SliderSound(float a, float b)
 	{
-		if (sliderAudio.isPlaying) 
+        //TODO ugly workaround to not spam sounds on level load 09/22/16
+        if (!sliderAudio.enabled && GameManager.Instance.countdownTimer <= GameManager.Instance.gameSessionLength - 1f)
+            sliderAudio.enabled = true;
+
+        if (sliderAudio.isPlaying) 
 		{
 			sliderAudio.Stop();
 		}

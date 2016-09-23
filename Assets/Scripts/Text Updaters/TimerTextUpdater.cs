@@ -14,7 +14,7 @@ public class TimerTextUpdater : MonoBehaviour {
     
     IEnumerator DelayTimerText()
     {
-        while (true)
+        while (GameManager.Instance.countdownTimer >= 0f)
         {
             yield return new WaitForSeconds(1f);
             
